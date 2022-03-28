@@ -13,7 +13,7 @@ public class MoveLogic : MonoBehaviour
     }
     private void Update()
     {
-        ManagementPlayer managementPlayer = GetComponent<ManagementPlayer>();
+        HorAndMove managementPlayer = GetComponent<HorAndMove>();
         if(managementPlayer._isSwitchPlayer == false)
         {
             MoveHorizontal();

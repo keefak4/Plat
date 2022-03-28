@@ -9,6 +9,6 @@ public class SetActiveInf : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _infClick.SetActive(true);
-        Destroy(_infClick, 2f);
+        Destroy(_infClick, 1.2f);
     }
 }

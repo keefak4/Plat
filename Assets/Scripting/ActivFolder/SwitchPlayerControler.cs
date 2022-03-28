@@ -8,7 +8,7 @@ public class SwitchPlayerControler : MonoBehaviour
     [SerializeField] private GameObject _PlayerObject;
     private void OnTriggerEnter(Collider other)
     {
-        ManagementPlayer managementPlayer = other.GetComponent<ManagementPlayer>();
+        HorAndMove managementPlayer = other.GetComponent<HorAndMove>();
 
         if(managementPlayer)
         {
@@ -16,7 +16,7 @@ public class SwitchPlayerControler : MonoBehaviour
             if (managementPlayer._isSwitchPlayer == true)
             {
                 _clickButtomSwichPlayerControl.SetActive(true);
-                Destroy(_clickButtomSwichPlayerControl, 3f);
+                 Destroy(_clickButtomSwichPlayerControl, 1.2f);
                 _PlayerObject.gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
             }
         }
